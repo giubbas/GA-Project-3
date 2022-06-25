@@ -1,0 +1,54 @@
+.subgenre-row {
+  display: flex;
+  text-align: center;
+  width: 150px;
+
+  a{
+    text-decoration: none;
+  }
+
+  .image-wrapper-similar {
+
+    img {
+      width: 150px;
+      height: 230px;
+    }
+  }
+
+  .card-body-similar {
+    height: 120px;
+
+    .card-title-similar {
+      margin-top: 10px;
+      overflow: hidden;
+      height: 32%;
+      width: 100%;
+
+      h4 {
+        margin-top: 20px;
+        font-size: 0.80em;
+        font-weight: 600;
+        color: #0a0a09;
+      }
+    }
+    
+    .authors-you-may {
+      height: 30%;
+      overflow: hidden;
+
+      h5 {
+        font-size: 0.8em;
+        color: #0a0a09;
+        font-weight: 400;
+        margin-left: 0px;
+      }
+    }
+
+    .price {
+      margin-top: 10px;
+      font-size: 1em;
+      font-weight: 600;
+      color: #0a0a09;
+    }
+  }    
+}    
