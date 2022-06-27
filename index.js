@@ -17,7 +17,8 @@ const logger = (req, res, next) => {
 const startServer = async () => {
 
   const app = express()
-
+  app.use(logger)
+  app.use(express.json())
   app.use('/api', router)
 
   // ** New lines **
