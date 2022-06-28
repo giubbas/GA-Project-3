@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import express from 'express'
 import router from './config/router.js'
 import 'dotenv/config'
-
+require('dotenv').config()
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
 
