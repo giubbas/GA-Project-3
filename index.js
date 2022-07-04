@@ -16,6 +16,7 @@ const logger = (req, res, next) => {
 const startServer = async () => {
 
   const app = express()
+
   app.use(logger)
   app.use(express.json())
   app.use('/api', router)
@@ -31,8 +32,8 @@ const startServer = async () => {
   // app.get('/', (req, res, next) => {
   //   return res.end('Welcome to our API.')
   // })
-  console.log('VERIFY --->', process.env.MONGODB_CONNECTION_STRING)
-  await mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
+
+  await mongoose.connect(process.env.DB_URI)
   console.log('Connected to MongoDB!')
   app.listen(process.env.PORT, () => console.log(`🚀 - Server listening on Port ${process.env.PORT}`))
 } 
