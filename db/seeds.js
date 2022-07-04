@@ -8,7 +8,7 @@ const seedDatabase = async () => {
 
   try {
     mongoose.connect(process.env.DB_URI)
-    await mongoose.connection.db.dropDatabase()
+    // await mongoose.connection.db.dropDatabase()
     const booksAdded = await Book.create(booksData)
     console.log(`Databades seeded with ${booksAdded.length} books`)
     await mongoose.connection.close()
