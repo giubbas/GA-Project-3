@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import express from 'express'
 import router from './config/router.js'
 import 'dotenv/config'
-require('dotenv').config()
+// require('dotenv').config()
 import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -33,7 +33,7 @@ const startServer = async () => {
   //   return res.end('Welcome to our API.')
   // })
 
-  mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
+  await mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
   console.log('Connected to MongoDB!')
   app.listen(process.env.PORT, () => console.log(`🚀 - Server listening on Port ${process.env.PORT}`))
 } 
