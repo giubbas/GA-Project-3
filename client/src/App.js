@@ -15,9 +15,6 @@ import Reviews from './components/Reviews.js'
 import Profile from './components/Profile.js'
 import SearchResult from './components/SearchResults.js'
 
-
-
-
 const App = () => {
 
 

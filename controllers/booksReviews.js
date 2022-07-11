@@ -8,9 +8,6 @@ export const addReview = async (req, res) => {
 
     const reviewWithOwner = { ...req.body, owner: req.verifiedUser._id }
 
-    // const newReview = await Review.create(reviewWithOwner)
-    //book.reviews.push(reviewWithOwner)
-
     bookToUpdate.reviews.push(reviewWithOwner)
     await bookToUpdate.save()
     return res.status(200).json(reviewWithOwner)

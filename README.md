@@ -3,7 +3,7 @@
 ## 1 week group project
 ---
 ## Brief
-For our third project at General Assembly, we were asked to build a full-stack web application by building our own front and back-end, we were paired in a group of 3 and given 7 days to complete the project.
+For our third project at General Assembly, we were asked to build a full-stack web application by building our own front and back-end, we were divided into groups of three and given seven days to complete the project.
 Our idea was to create a book app in which the user can register and leave reviews and save items in a wishlist.
 
 ## Project link
@@ -45,7 +45,7 @@ My main tasks were to start the backend, do the homepage and the reviews
 ## Build process
 ### Back-end
 
-We decided to do the back-end togheter and then split the roles in the front-end part. 
+We decided to do the back-end together and then split the roles in the front-end part. 
 So once the set up and the database were ready, we started doing the models, the router and the controllers.  
 
 <div>
@@ -54,15 +54,45 @@ So once the set up and the database were ready, we started doing the models, the
 
 Our controllers included the GET methods for the books and the GET, POST and PUT method for authentication and for updating user credentials.
 
+<div>
+<img src="readme-images/controllers.png">
+</div>
+
+We also created a review schema and the related controllers in order to make the add and delete review's functionality. 
+
+<div>
+<img src="readme-images/controllers.png">
+</div>
+
+Then we wanted the possibility to show the user's profile page and to update the profile's information.
+
+<div>
+<img src="readme-images/reviews-back-end.png">
+</div>
+
 ### Front-end
 My first task in the front-end part was to make the home page, which was quite challenging because of the carousels. 
-I managed to find a good slider package called react-slick. It was quite simple to use but dificult to customize. 
+I managed to find a good slider package called react-slick. It was quite simple to use but difficult to customize. 
 
 <div>
 <img src="readme-images/home.png">
 </div>
 
 After that I coded the reviews so that once posted they would show the owner's name, the title of the comment and the text. Then I provided a "delete-review" button that appears only if you are the owner of that review. 
+
+<div>
+<img src="readme-images/reviews-front-end.png">
+</div>
+
+In the image above, a portion of the ReviewDisplay function that returns the text body and a delete button only if the user is the owner of that review.
+
+The userIsOwner is a function found in the auth.js file, along with other functions pertaining to authentication. 
+
+<div>
+<img src="readme-images/user-is-owner.PNG">
+</div>
+
+This function checks if the owner's id it's the same of the payload.sub. 
 
 # Wins 
 
@@ -78,7 +108,7 @@ After that I coded the reviews so that once posted they would show the owner's n
 
 ## Key learnings
 
-In addition to having gained more confidence with programming, I feel I have learned something more about working in group. I think a mistake we made was not having a leader with clear ideas to lead the group and choose what to do and what not to do. Some roles weren't well defined and we ended up with some features that didn't work one hundred percent, messy code, and sloppy style. 
+In addition to having gained more confidence with programming, I feel I have learned something more about working in a group. I think a mistake we made was not having a leader with clear ideas to lead the group and choose what to do and what not to do. Some roles weren't well defined and we ended up with some features that didn't work one hundred percent, messy code, and sloppy style. 
 
 ## Potential future features
 - **Make the app responsive**
