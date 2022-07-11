@@ -7,7 +7,7 @@ For our third project at General Assembly, we were asked to build a full-stack w
 Our idea was to create a book app in which the user can register and leave reviews and save items in a wishlist.
 
 ## Project link
-link
+[Check out the site!](https://ga-project-books.herokuapp.com/)
 
 ## Tech list
 #### Front-end
