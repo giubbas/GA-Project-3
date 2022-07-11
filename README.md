@@ -92,7 +92,7 @@ The userIsOwner is a function found in the auth.js file, along with other functi
 <img src="readme-images/user-is-owner.PNG">
 </div>
 
-This function checks if the owner's id it's the same of the payload.sub. 
+This function checks if the owner's id it's the same as the payload.sub. 
 
 # Wins 
 
